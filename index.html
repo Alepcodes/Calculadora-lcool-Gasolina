@@ -1,11 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="keywords" content="Calculadora Álcool ou Gasolina">
+    <title>Calculadora Álcool ou Gasolina</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div>Testando novo repositorio git</div>
+    <main class="container">
+        <img class="logo" src="imgs/logo.png" alt="Logo de Bomba de galosina">
+        <h1 class="title">Qual melhor opção?</h1>
+
+        <form class="form">
+            <label> Álcool (preço por litro):</label>
+            <input class="input"
+            type="number"
+            placeholder="R$:4,90"
+            min="1"
+            step="0.01"
+            required
+            />
+            <label">Gasolina (preço por litro):</label>
+            <input class="input"
+            type="number"
+            placeholder="R$:6,50"
+            min="1"
+            step="0.01"
+            required
+            />
+
+            <input class="button" type="submit" value="Calcular">
+        </form>
+
+<section class="result">
+<span id="text">Compensa usar Álcool</span>
+
+<span>Álcool R$ 3,90</span>
+<span>Gasolina R$ 6,80</span>
+
+</section>
+
+    </main>
+
+    <div class="info">
+        <span class="tooltip">Veja como é feito o calculo</span>
+        <a href="#">
+        <img class="info-img" src="./imgs/info.png" alt="Veja como é feito o calculo">
+        </a>
+    </div>
 </body>
 </html>
